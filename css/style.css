@@ -1,0 +1,6 @@
+.done {
+  display: none; }
+
+.finish {
+  text-decoration: line-through;
+  color: grey; }
