@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
 body{
     font-family: 'Roboto', sans-serif;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .done{
     display: none;
@@ -9,4 +18,66 @@ body{
 .finish{
     text-decoration: line-through;
     color: grey;
+}
+.container{
+    max-width: 30%;
+    min-height: auto;
+    margin: 5rem auto;
+    .heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #5656ff;
+        padding: 0.5rem;
+        h1, #insert{
+            color: #ffebcd;
+            &:hover{
+                color: #33dd2d;
+            }
+        }
+    }
+    #todoInput{
+        max-width: 100%;
+        min-height: auto;
+        background-color: #5656ff;
+        #mytodo, #btnTodo{
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        input[type="text"]{
+            width: 85%;
+            background-color: whitesmoke;
+            &:hover, :focus{
+                border: none;
+                border-radius: 0.5rem;
+            }
+        }
+        button{
+            width: 14%;
+            background-color: whitesmoke;
+            &:hover{
+                background-color: #33dd2d;
+                color: whitesmoke;
+                border: none;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+    #todos{
+        background-color: whitesmoke;
+        color: black;
+        p{
+            width: 100%;
+            height: 2.5rem;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: normal;
+            padding-left: 1rem;
+            &:nth-child(2n){
+                background-color: #e4e4e4
+            }
+        }
+    }
 }
