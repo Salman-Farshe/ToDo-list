@@ -21,7 +21,18 @@ body{
 .container{
     max-width: 30%;
     min-height: auto;
-    margin: 5rem auto;
+    margin: 1rem auto;
+    .instruction{
+        p{
+            color: #222222;
+            font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+            & span{
+                color: #28dc28;
+            }
+        }
+    }
     .heading{
         display: flex;
         flex-direction: row;
