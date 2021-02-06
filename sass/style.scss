@@ -121,10 +121,20 @@ body{
 @media (max-width: 480px){
     .container{
         max-width: 80%;
+        #todoInput{
+            #btnTodo{
+                font-size: 1rem;
+            }
+        }
     }
 }
 @media (max-width: 320px){
     .container{
         max-width: 95%;
+        #todoInput{
+            #btnTodo{
+                font-size: 1rem;
+            }
+        }
     }
 }

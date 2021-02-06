@@ -97,8 +97,12 @@ body {
 
 @media (max-width: 480px) {
   .container {
-    max-width: 80%; } }
+    max-width: 80%; }
+    .container #todoInput #btnTodo {
+      font-size: 1rem; } }
 
 @media (max-width: 320px) {
   .container {
-    max-width: 95%; } }
+    max-width: 95%; }
+    .container #todoInput #btnTodo {
+      font-size: 1rem; } }
